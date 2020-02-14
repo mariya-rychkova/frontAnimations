@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tetris</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="tetris-container">
+      <div class="grid">
+        <div class="left-column">
+          <canvas id="board" class="game-board"></canvas>
+        </div>
+        <div class="right-column">
+          <h2>When you fit in, you dissapear</h2>
+          <p>Score: <span id="score">0</span></p>
+          <p>Lines: <span id="lines">0</span></p>
+          <p>Level: <span id="level">0</span></p>
+          <canvas id="next" class="next"></canvas>
+          <button onclick="play()" class="play-button">Play</button>
+        </div>
+      </div>
+    </div>
+    <script src="config.js" charset="utf-8"></script>
+    <script src="board.js" charset="utf-8"></script>
+    <script src="piece.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
